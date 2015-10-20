@@ -20,9 +20,9 @@
          <children>
             <HBox prefHeight="15.0" prefWidth="800.0">
                <children>
-                  <TextField fx:id="TextField" prefHeight="24.0" prefWidth="215.0" text="Name" />
-                  <TextField fx:id="TextField" prefHeight="24.0" prefWidth="215.0" text="Phone #" />
-                  <TextField fx:id="TextField" prefHeight="24.0" prefWidth="215.0" text="Email" />
+                  <TextField fx:id="textName" prefHeight="24.0" prefWidth="215.0" promptText="Name" />
+                  <TextField fx:id="textPhone" prefHeight="24.0" prefWidth="215.0" promptText="Phone #" />
+                  <TextField fx:id="textEmail" prefHeight="24.0" prefWidth="215.0" promptText="Email" />
                   <Button mnemonicParsing="false" onAction="#createContact" prefHeight="26.0" prefWidth="75.0" text="Add" />
                   <Button mnemonicParsing="false" onAction="#removeContact" prefHeight="26.0" prefWidth="80.0" text="Remove" />
                </children>

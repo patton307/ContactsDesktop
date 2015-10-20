@@ -27,15 +27,18 @@ public class Controller implements Initializable {
     TextField textEmail;
 
     public void createContact () {
-        do {
+        if (textName.getText().equals("") || textPhone.getText().equals("") || textEmail.getText().equals(""))
+        {
+            System.out.println("");
+
+        } else {
             Contact contact = new Contact(textName.getText(), textPhone.getText(), textEmail.getText());
             contacts.add(contact);
-        } while (textName.getText().equals("") || textPhone.getText().equals("") || textEmail.getText().equals(""));
 
-
-        textName.setText("");
-        textPhone.setText("");
-        textEmail.setText("");
+            textName.setText("");
+            textPhone.setText("");
+            textEmail.setText("");
+        }
     }
 
     public void removeContact () {
